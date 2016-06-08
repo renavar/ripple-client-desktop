@@ -16,3 +16,12 @@ install:
   - npm install
 script:
   - gulp packages
+deploy:
+  provider: releases
+  api_key: 
+    secure: "90635f5994b96976418810fe2fc480a0433662e7"
+  file:
+    - "packages/RippleAdminConsole"
+  skip_cleanup: true
+  on:
+    tags: false
